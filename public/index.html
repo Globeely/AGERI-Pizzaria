@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pizzaria AGERI - Home</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="./index.html"><img src="./img/Logo-Pizzaria.png" alt="Logo Pizzaria AGERI"><span class="pizzaria">Pizzaria</span><span class="ageri">AGERI</span></a>
+      </div>
+      <nav>
+        <ul class="menu-list">
+          <li><a href="./index.html" class="menu-link active" id="home-link">Home</a></li>
+          <li><a href="./menu.html#menuID" class="menu-link">Cardápio</a></li>
+          <li><a href="#sobreID" class="menu-link" id="sobre-link">Sobre</a></li>
+          <li><a href="./carrinho.html" class="menu-link">Carrinho</a></li>
+          <ul class="social-media-head">
+            <li><a href="https://www.youtube.com/@AGERIConsultoriaemTecnologia" target="_blank"><img src="./img/icon-youtube.png" alt="YouTube"></a></li>
+            <li><a href="https://www.instagram.com/agericonsultoria/" target="_blank"><img src="./img/icon-instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/company/ageri-consultoria-tecnologia" target="_blank"><img src="./img/icon-linkedin.png" alt="LinkedIn"></a></li>
+          </ul>
+        </ul>
+
+      </nav>
+
+      <!-- Ícone do menu responsivo -->
+      <div id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu responsivo para dispositivos móveis -->
+  <nav id="responsive-menu">
+      <ul class="menu-list">
+        <li><a href="#homeID" class="menu-link active">Home</a></li>
+        <li><a href="./menu.html#menuID" class="menu-link">Cardápio</a></li>
+        <li><a href="#sobreID" class="menu-link">Sobre</a></li>
+        <li><a href="./carrinho.html" class="menu-link">Carrinho</a></li>
+        <ul class="social-media-head">
+          <li><a href="https://www.youtube.com/@AGERIConsultoriaemTecnologia" target="_blank"><img src="./img/icon-youtube.png" alt="YouTube"></a></li>
+          <li><a href="https://www.instagram.com/agericonsultoria/" target="_blank"><img src="./img/icon-instagram.png" alt="Instagram"></a></li>
+          <li><a href="https://www.linkedin.com/company/ageri-consultoria-tecnologia" target="_blank"><img src="./img/icon-linkedin.png" alt="LinkedIn"></a></li>
+        </ul>
+      </ul>
+  </nav>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <p>Este site tem por objetivo a simulação de compras, nenhum pedido tem validade real. As informações aqui inseridas são de cunho educacional!</p>
+    </div>
+  </div>
+
+  <section class="parallax-container" id="homeID">
+    <div class="container container-pizza">
+      <h1 class="word1">Nachos</h1>
+      <div class="container-word">
+        <h1 class="word2">Nachos</h1>
+        <p class="texto-adicional">Experimente a explosão de sabores mexicanos em cada mordida! Nossa pizza de nachos é uma festa para seus sentidos, com uma base crocante coberta com uma generosa camada de queijo derretido, nachos crocantes, pimentões coloridos, cebolas frescas e uma pitada picante de jalapeños. Uma verdadeira fiesta em sua boca!</p>
+        <div class="count-container">
+          <!-- <div>
+            <button class="quantidade-btn" id="menos">-</button>
+            <input type="number" id="quantidade" value="1">
+            <button class="quantidade-btn" id="mais">+</button>
+          </div> -->
+          <div class="count-container2">
+            <button id='adicionar-carrinho2' class="add-to-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <div class="arrow left-arrow">&lt;</div>
+          <div class="bullets">
+            <div class="bullet active" data-pizza="nachos"></div>
+            <div class="bullet" data-pizza="strogonoff"></div>
+            <div class="bullet" data-pizza="calabresa"></div>
+          </div>
+          <div class="arrow right-arrow">&gt;</div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel">
+      <div class="image-container">
+        <img src="./img/10.png" alt="Imagem" class="image">
+        <img src="./img/11.png" alt="Imagem" class="image">
+        <img src="./img/14.png" alt="Imagem" class="image">
+      </div>
+    </div>
+  </section>
+
+  <section class="container glass">
+    <div class="glass-effect">
+      <div class="glass-content">
+        <div>
+          <h2>NOSSA QUALIDADE</h2>
+          <p>Garantimos a excelência em cada ingrediente, sabor e fatia!</p>
+        </div>
+        <p class="line">____________________________________</p>
+        <div>
+          <h2>CUSTOMIZAÇÕES</h2>
+          <p>Nosso compromisso é a satisfação do cliente. Nos diga do que precisa e entregamos conforme a sua necessidade!</p>
+        </div>
+        <p class="line">____________________________________</p>
+        <div>
+          <h2>NOSSO SUCESSO</h2>
+          <p>Mais de 10 anos de experiência. Uma jornada recheada de sabor e conquistas!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container menu">
+    <div class="vertical-line"></div>
+    <div class="menu-text">
+      <h1>CARDÁPIO</h1>
+      <p>As mais pedidas no momento</p>
+    </div>
+    <div class="menu-wrapper">
+      <div class="tabs">
+        <button class="tab active" data-category="pizza" onclick="openCategory('pizza')">Pizza</button>
+        <button class="tab" data-category="salada" onclick="openCategory('salada')">Salada</button>
+        <button class="tab" data-category="bebidas" onclick="openCategory('bebidas')">Bebidas</button>
+      </div>
+      <div id="pizza" class="category produtos active">
+        <div  class="menu-carousel">
+          <div class="menu-item" id="pizza1">
+            <div class="produto">
+              <img src="./img/10.png" alt="Produto 1">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Nachos</h2>
+                  <p class="price">R$ 46,00</p>
+                </div>
+                <p class="descricao">Nacho</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/11.png" alt="Produto 2">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Calabresa</h2>
+                  <p class="price">R$ 59,90</p>
+                </div>
+                <p class="descricao">Calabresa</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/12.png" alt="Produto 3">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Portuguesa</h2>
+                  <p class="price">R$ 36,60</p>
+                </div>
+                <p class="descricao">Portuguesa</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="salada" class="category" style="display: none;">
+        <div class="menu-item" id="salada1">
+          <div class="produto">
+            <img src="./img/Salada_07.png" alt="Produto 4">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Alface</h2>
+                <p class="price">R$ 10,00</p>
+              </div>
+              <p class="descricao">Salada de Alface</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/Salada_06.png" alt="Produto 5">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Anate</h2>
+                <p class="price">R$ 5,00</p>
+              </div>
+              <p class="descricao">Salada Anate</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/Salada_05.png" alt="Produto 6">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Mista</h2>
+                <p class="price">R$ 12,00</p>
+              </div>
+              <p class="descricao">Salada Mista</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bebidas" class="category" style="display: none;">
+        <div class="menu-item" id="refrigerante1">
+          <div class="produto">
+            <img src="./img/refrigerante_04.png" alt="Produto 4">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Coca-Cola</h2>
+                <p class="price">R$ 7,00</p>
+              </div>
+              <p class="descricao">Refrigerante Coca-Cola</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/refrigerante_03.png" alt="Produto 5">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Sprite</h2>
+                <p class="price">R$ 6,00</p>
+              </div>
+              <p class="descricao">Refrigerante Sprite</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/refrigerante_02.png" alt="Produto 6">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Guaraná</h2>
+                <p class="price">R$ 4,00</p>
+              </div>
+              <p class="descricao">Refrigerante Guaraná</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="./menu.html#menuID" class="menu-link"><button class="comprar">VEJA O CARDÁPIO COMPLETO</button></a>
+      </div>
+      </div>
+  </section>
+
+  <section id="feedback">
+    <div class="container-feedback">
+      <div class="feedback-text">
+        <h2>O que nossos clientes dizem</h2>
+      </div>
+      <div class="container-feedback2">
+        <button class="prev-btn">&#10094;</button>
+        <div class="feedback-carousel">
+          <div class="feedback-slide">
+            <div class="feedback-content">
+              <p>Nos últimos meses, a Pizzaria AGERI tem sido nossa grande aliada na criação de novos sabores e na melhoria dos ingredientes já existentes em nosso cardápio, através da Plataforma Nova Receita. Um dos segredos da Pizzaria AGERI é sua equipe de pizzaiolos; são verdadeiros mestres na arte da pizza, além de serem extremamente dedicados e entregarem qualidade em cada pedaço. Parabéns, Pizzaria AGERI!</p>
+              <p class="feedback-author">- João Silva</p>
+            </div>
+          </div>
+          <div class="feedback-slide">
+            <div class="feedback-content">
+              <p>Nossa experiência com a Pizzaria AGERI foi uma verdadeira delícia!!! Desde o primeiro contato, a disponibilidade foi imediata, destacando o conhecimento técnico do Chef Américo, compreendendo nossos desejos e comprometendo-se com nossas expectativas e prazos. A montagem da pizza foi tão organizada que nos sentimos pertinho dos pizzaiolos. Hoje, cada pedaço representa segurança para nossas papilas gustativas. Com certeza, recomendamos!</p>
+              <p class="feedback-author">- Maria Santos</p>
+            </div>
+          </div>
+          <div class="feedback-slide">
+            <div class="feedback-content">
+              <p>A Pizzaria AGERI é uma parceira de longa data e juntos continuamos a criar pizzas incríveis. Em cada pedido que realizamos juntos, nos tranquiliza saber que podemos contar com toda a expertise deles, em qualquer etapa do preparo. É uma das poucas pizzarias que recomendamos de olhos fechados!</p>
+              <p class="feedback-author">- Carlos Oliveira</p>
+            </div>
+          </div>
+          <div class="feedback-slide">
+            <div class="feedback-content">
+              <p>A parceria com a Pizzaria AGERI tem sido uma verdadeira festa para nós. A equipe é muito proativa, muito bem preparada na arte da pizza, sempre que precisamos são prestativos e rápidos em nos servir, temos degustado ótimos sabores com essa parceria.</p>
+              <p class="feedback-author">- Ana Souza</p>
+            </div>
+          </div>
+          <div class="feedback-slide">
+            <div class="feedback-content">
+              <p>A parceria com a Pizzaria AGERI tem sido de grande valor gastronômico para o Mercado Pizza. Os pizzaiolos da Pizzaria AGERI são extremamente capacitados e motivados, e essa parceria resulta sempre em incríveis sabores para nossa área de Pizzabilidade.</p>
+              <p class="feedback-author">- Lucas Pereira</p>
+            </div>
+          </div>
+          <div class="feedback-slide">
+            <div class="feedback-content">
+              <p>Fomos muito bem servidos pela Pizzaria AGERI. A disponibilidade e o conhecimento foram pontos cruciais para que pudéssemos saborear a pizza de toda a empresa.</p>
+              <p class="feedback-author">- Juliana Rodrigues</p>
+            </div>
+          </div>
+        </div>
+        <button class="next-btn">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container sobre" id="sobreID">
+    <div class="imagem">
+      <img src="./img/Chef.png" alt="Chef de Cozinha da Pizzaria AGERI">
+    </div>
+    <div class="texto">
+      <h2>SOBRE</h2>
+      <p>Sentimos decepcioná-los, mas você não irá saborear uma pizza a princípio.</p>
+      <p>A <span>Pizzaria AGERI</span> é uma demonstração de como a observabilidade pode te ajudar nas tomadas de decisões do seu negócio de forma mais assertiva. É inteligência aplicada ao seu negócio! Do gerenciamento real time à predição de problemas e impactos. Do correlacionamento de dados tecnológicos e de negócios à visualização end to end do negócio. Oferecemos um monitoramento constante em cada etapa do processo.</p>
+      <p>Mas isso também pode ser sobre pizza!</p>
+      <p>Gostou? Que tal saborearmos uma pizza juntos e discutirmos sobre como podemos agregar ainda mais valor ao seu negócio? Entre em contato conosco em <span class="site-ageri"><a href="https://ageri.com.br/" target="_blank">www.ageri.com.br</a></span></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="container-footer">
+        <div class="logo">
+          <a href=""><span class="pizzaria">Pizzaria</span><span class="ageri">AGERI</span></a>
+        </div>
+        <ul class="social-media">
+          <li><a href="https://www.youtube.com/@AGERIConsultoriaemTecnologia" target="_blank"><img src="./img/icon-youtube.png" alt="YouTube"></a></li>
+          <li><a href="https://www.instagram.com/agericonsultoria/" target="_blank"><img src="./img/icon-instagram.png" alt="Instagram"></a></li>
+          <li><a href="https://www.linkedin.com/company/ageri-consultoria-tecnologia" target="_blank"><img src="./img/icon-linkedin.png" alt="LinkedIn"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; <span id="current-year"></span> Pizzaria AGERI. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Função para mostrar o pop-up
+    function showPopup() {
+      document.getElementById("popup").style.display = "flex";
+    }
+  
+    // Função para fechar o pop-up e salvar o estado no localStorage
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+      localStorage.setItem('popupClosed', Date.now());
+    }
+  
+    // Adiciona evento de clique ao botão de fechar
+    document.querySelector(".close-btn").addEventListener("click", closePopup);
+  
+    // Fecha o pop-up ao clicar fora do conteúdo do pop-up
+    window.onclick = function(event) {
+      if (event.target === document.getElementById("popup")) {
+        closePopup();
+      }
+    }
+  
+    // Mostra o pop-up quando a página é carregada, se ele não tiver sido fechado recentemente
+    window.onload = function() {
+      const popupClosed = localStorage.getItem('popupClosed');
+      const tenMinutes = 10 * 60 * 1000;
+  
+      if (!popupClosed || (Date.now() - popupClosed > tenMinutes)) {
+        showPopup();
+      }
+    };
+  
+    // Função para adicionar o produto ao carrinho a partir do botão específico
+    function adicionarCarrinho(event) {
+      // Captura o elemento pai do botão clicado
+      const produto = event.target.closest('.produto');
+  
+      // Obtém os dados do produto
+      const nome = produto.querySelector('.nome-preco h2').textContent;
+      const precoTexto = produto.querySelector('.nome-preco .price').textContent;
+      const preco = parseFloat(precoTexto.replace('R$ ', '').replace(',', '.'));
+      const descricao = produto.querySelector('.descricao').textContent;
+      const imagem = produto.querySelector('img').src; // Supondo que a imagem esteja presente na estrutura HTML
+  
+      // Exibe os dados capturados para teste
+      console.log("Nome:", nome);
+      console.log("Preço:", preco);
+      console.log("Descrição:", descricao);
+      console.log("Imagem:", imagem);
+  
+      // Aqui você pode chamar a função para enviar os dados para o servidor
+      carrinho(nome, preco, descricao, imagem);
+    }
+  
+    // Função para enviar dados do produto ao servidor
+    function carrinho(nome, preco, descricao, imagem) {
+      fetch('/carrinho', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ nome, preco, descricao, imagem }),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Resposta do servidor:', data);
+        // Aqui você pode redirecionar para a página do carrinho ou exibir uma mensagem de sucesso
+      })
+      .catch(error => {
+        console.error('Erro ao adicionar ao carrinho:', error);
+        // Aqui você pode exibir uma mensagem de erro para o usuário
+      });
+    }
+  
+    // Função para adicionar o produto ao carrinho a partir do botão "Adicionar ao Carrinho 2"
+    function adicionarCarrinho2() {
+      // Obtém o produto atualmente ativo
+      const bulletAtiva = document.querySelector('.bullet.active');
+      const tipoProduto = bulletAtiva.dataset.pizza;
+  
+      // Dados dos produtos
+      const produtos_inicial = {
+        nachos: {
+          nome: "Nachos",
+          preco: "46",
+          descricao: "Nacho",
+          imagem: "./img/10.png"
+        },
+        calabresa: {
+          nome: "Calabresa",
+          preco: "59",
+          descricao: "Calabresa",
+          imagem: "./img/11.png"
+        },
+        strogonoff: {
+          nome: "Strogonoff",
+          preco: "79",
+          descricao: "Strogonoff",
+          imagem: "./img/14.png"
+        }
+      };
+  
+      // Obtém as informações do produto ativo
+      const produto1 = produtos_inicial[tipoProduto];
+      if (!produto1) {
+        console.error("Produto não encontrado.");
+        return;
+      }
+  
+      // Envia os dados para o banco de dados
+      fetch('/carrinho', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(produto1),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Resposta do servidor:', data);
+        // Aqui você pode redirecionar para a página do carrinho ou exibir uma mensagem de sucesso
+      })
+      .catch(error => {
+        console.error('Erro ao adicionar ao carrinho:', error);
+        // Aqui você pode exibir uma mensagem de erro para o usuário
+      });
+    }
+  
+    // Adiciona o evento de clique ao botão "Adicionar ao Carrinho 2"
+    document.getElementById('adicionar-carrinho2').addEventListener('click', adicionarCarrinho2);
+  
+    // Configuração do carrossel de imagens
+    const textos = [
+      {
+        titulo: "Nachos",
+        textoAdicional: "Experimente a explosão de sabores mexicanos em cada mordida! Nossa pizza de nachos é uma festa para seus sentidos, com uma base crocante coberta com uma generosa camada de queijo derretido, nachos crocantes, pimentões coloridos, cebolas frescas e uma pitada picante de jalapeños. Uma verdadeira fiesta em sua boca!"
+      },
+      {
+        titulo: "Calabresa",
+        textoAdicional: "Sinta o sabor autêntico da Itália em cada pedaço! Nossa pizza de calabresa é uma obra-prima de simplicidade e sabor. Delicie-se com nossa massa fina e crocante, generosamente coberta com fatias suculentas de calabresa defumada, queijo derretido e temperos italianos. Uma verdadeira delícia clássica!"
+      },
+      {
+        titulo: "Strogonoff",
+        textoAdicional: "Prepare-se para uma experiência gourmet única e irresistível! Nossa pizza de strogonoff é uma combinação perfeita entre a tradição russa e o sabor italiano. Delicie-se com uma base macia e saborosa, coberta com nosso delicioso strogonoff de carne cremoso, queijo derretido e ervas frescas. Uma explosão de sabores!"
+      }
+    ];
+  
+    let currentIndex = 0;
+  
+    function moverImagem() {
+      const primeiraImagem = document.querySelector('.image-container img:first-child');
+      const ultimaImagem = document.querySelector('.image-container img:last-child');
+      
+      const primeiraBullet = document.querySelector('.bullet:first-child');
+      const ultimaBullet = document.querySelector('.bullet:last-child');
+  
+      primeiraImagem.parentNode.removeChild(primeiraImagem);
+      ultimaImagem.parentNode.insertBefore(primeiraImagem, ultimaImagem.nextSibling);
+  
+      primeiraBullet.parentNode.removeChild(primeiraBullet);
+      ultimaBullet.parentNode.insertBefore(primeiraBullet, ultimaBullet.nextSibling);
+  
+      updateText();
+    }
+  
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % textos.length;
+      moverImagem();
+      updateBullet(); // Atualiza as bolinhas
+    }
+  
+    function previousImage() {
+      currentIndex = (currentIndex - 1 + textos.length) % textos.length;
+      moverImagem();
+    }
+  
+    function updateText() {
+      document.querySelector('.word1').textContent = textos[currentIndex].titulo;
+      document.querySelector('.word2').textContent = textos[currentIndex].titulo;
+      document.querySelector('.texto-adicional').textContent = textos[currentIndex].textoAdicional;
+    }
+  
+    function updateBullet() {
+      const bullets = document.querySelectorAll('.bullet');
+      bullets.forEach((bullet, index) => {
+        if (index === currentIndex) {
+          bullet.classList.add('active');
+        } else {
+          bullet.classList.remove('active');
+        }
+      });
+    }
+  
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+    leftArrow.addEventListener('click', previousImage);
+    rightArrow.addEventListener('click', nextImage);
+  
+    setInterval(nextImage, 6000);
+  
+    // Configuração do carrossel de feedback
+    document.addEventListener("DOMContentLoaded", function() {
+      const prevBtn = document.querySelector(".prev-btn");
+      const nextBtn = document.querySelector(".next-btn");
+      const carouselContent = document.querySelector(".carousel-content");
+      const feedbackItems = document.querySelectorAll(".feedback-item");
+  
+      nextBtn.addEventListener("click", function() {
+        if (currentIndex < feedbackItems.length - 1) {
+          currentIndex++;
+          updateCarousel();
+        }
+      });
+  
+      prevBtn.addEventListener("click", function() {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+        }
+      });
+  
+      function updateCarousel() {
+        const itemWidth = feedbackItems[currentIndex].offsetWidth;
+        const newPosition = -itemWidth * currentIndex;
+        carouselContent.style.transform = `translateX(${newPosition}px)`;
+      }
+    });
+  
+    // Slide FeedBack
+    var slideIndex = 1;
+    showSlides(slideIndex);
+  
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("feedback-slide");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block";  
+    }
+  
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+  
+    document.querySelector('.prev-btn').addEventListener('click', function() {
+      plusSlides(-1);
+    });
+  
+    document.querySelector('.next-btn').addEventListener('click', function() {
+      plusSlides(1);
+    });
+  
+    setInterval(function() {
+      plusSlides(1);
+    }, 7000);
+  
+    var touchstartX = 0;
+    var touchendX = 0;
+  
+    var carousel = document.querySelector('.feedback-carousel');
+  
+    carousel.addEventListener('touchstart', function(event) {
+      touchstartX = event.changedTouches[0].screenX;
+    });
+  
+    carousel.addEventListener('touchend', function(event) {
+      touchendX = event.changedTouches[0].screenX;
+      handleGesture();
+    });
+  
+    function handleGesture() {
+      if (touchendX < touchstartX) {
+        plusSlides(1);
+      }
+      
+      if (touchendX > touchstartX) {
+        plusSlides(-1);
+      }
+    }
+  
+    // Atualiza o ano atual
+    var currentYearElement = document.getElementById('current-year');
+    var currentYear = new Date().getFullYear();
+    currentYearElement.textContent = currentYear;
+  
+  </script>
+  
+  
+</body>
+</html>

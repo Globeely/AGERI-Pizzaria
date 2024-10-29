@@ -1,0 +1,573 @@
+{
+    "Pizza": {
+      "strogonoff": {
+        "ingredientes": [
+          { 
+            "ingrediente": "Molho de tomate", 
+            "peso": "100" 
+          },
+          { 
+            "ingrediente": "Queijo mussarela", 
+            "peso": "150" 
+          },
+          { 
+            "ingrediente": "Frango desfiado", 
+            "peso": "150" 
+          },
+          { 
+            "ingrediente": "Champignon", 
+            "peso": "50" 
+          },
+          { 
+            "ingrediente": "Creme de leite", 
+            "peso": "100" 
+          },
+          { 
+            "ingrediente": "Cebola", 
+            "peso": "50" 
+          },
+          { 
+            "ingrediente": "Alho", 
+            "peso": "10" 
+          },
+          { 
+            "ingrediente": "Ketchup", 
+            "peso": "20" 
+          },
+          { 
+            "ingrediente": "Mostarda", 
+            "peso": "10" 
+          },
+          { 
+            "ingrediente": "Sal", 
+            "peso": "5" 
+          },
+          { 
+            "ingrediente": "Pimenta-do-reino", 
+            "peso": "2" 
+          },
+          { 
+            "ingrediente": "Salsinha", 
+            "peso": "5" 
+          }
+        ]
+      },
+      "Nachos": {
+        "ingredientes": [
+          {
+            "ingrediente": "Tomate",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "500"
+          },
+          {
+            "ingrediente": "Nachos",
+            "peso": "150"
+          },
+          {
+            "ingrediente": "Molho de Tomate",
+            "peso": "200"
+          },
+          {
+            "ingrediente": "Cebola",
+            "peso": "50"
+          }
+        ]
+      },
+      "Calabresa": {
+        "ingredientes": [
+          {
+            "ingrediente": "Calabresa",
+            "peso": "200"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "400"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Cebola",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Molho de Tomate",
+            "peso": "200"
+          }
+        ]
+      },
+      "Portuguesa": {
+        "ingredientes": [
+          {
+            "ingrediente": "Presunto",
+            "peso": "200"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "400"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Ovo",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Cebola",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Molho de Tomate",
+            "peso": "200"
+          }
+        ]
+      },
+      "Morango": {
+        "ingredientes": [
+          {
+            "ingrediente": "Morango",
+            "peso": "200"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "300"
+          },
+          {
+            "ingrediente": "Molho de Chocolate",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Biscoito",
+            "peso": "100"
+          }
+        ]
+      },
+      "Carne 1": {
+        "ingredientes": [
+          {
+            "ingrediente": "Carne",
+            "peso": "250"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "400"
+          },
+          {
+            "ingrediente": "Molho de Tomate",
+            "peso": "200"
+          }
+        ]
+      },
+      "Carne 2": {
+        "ingredientes": [
+          {
+            "ingrediente": "Carne",
+            "peso": "250"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "400"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Cebola",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Molho de Tomate",
+            "peso": "200"
+          }
+        ]
+      },
+      "Frango 1": {
+        "ingredientes": [
+          {
+            "ingrediente": "Frango",
+            "peso": "200"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "400"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Cebola",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Molho de Tomate",
+            "peso": "200"
+          }
+        ]
+      },
+      "Frango 2": {
+        "ingredientes": [
+          {
+            "ingrediente": "Frango",
+            "peso": "250"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "400"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Catupiry",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Cebola",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Molho de Tomate",
+            "peso": "200"
+          }
+        ]
+      },
+      "Linguiça": {
+        "ingredientes": [
+          {
+            "ingrediente": "Linguiça",
+            "peso": "200"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "400"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Cebola",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Molho de Tomate",
+            "peso": "200"
+          }
+        ]
+      },
+      "Frango 3": {
+        "ingredientes": [
+          {
+            "ingrediente": "Frango",
+            "peso": "200"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "400"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Cebola",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Molho de Tomate",
+            "peso": "200"
+          }
+        ]
+      },
+      "Cogumelo": {
+        "ingredientes": [
+          {
+            "ingrediente": "Cogumelo",
+            "peso": "200"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "400"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Cebola",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Molho de Tomate",
+            "peso": "200"
+          }
+        ]
+      },
+      "Calabresa 2": {
+        "ingredientes": [
+          {
+            "ingrediente": "Calabresa",
+            "peso": "200"
+          },
+          {
+            "ingrediente": "Queijo",
+            "peso": "400"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Cebola",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Molho de Tomate",
+            "peso": "200"
+          }
+        ]
+      },
+      "Alface": {
+        "ingredientes": [
+          {
+            "ingrediente": "Alface",
+            "peso": "200"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Cenoura",
+            "peso": "30"
+          },
+          {
+            "ingrediente": "Molho Vinagrete",
+            "peso": "20"
+          }
+        ]
+      },
+      "Anate": {
+        "ingredientes": [
+          {
+            "ingrediente": "Alface",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Azeitona",
+            "peso": "20"
+          },
+          {
+            "ingrediente": "Molho Vinagrete",
+            "peso": "20"
+          }
+        ]
+      },
+      "Mista": {
+        "ingredientes": [
+          {
+            "ingrediente": "Alface",
+            "peso": "150"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Cenoura",
+            "peso": "30"
+          },
+          {
+            "ingrediente": "Pepino",
+            "peso": "30"
+          },
+          {
+            "ingrediente": "Molho Vinagrete",
+            "peso": "20"
+          }
+        ]
+      },
+      "Verfruta": {
+        "ingredientes": [
+          {
+            "ingrediente": "Alface",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Maçã",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Morango",
+            "peso": "30"
+          },
+          {
+            "ingrediente": "Molho de Iogurte",
+            "peso": "20"
+          }
+        ]
+      },
+      "Verdura": {
+        "ingredientes": [
+          {
+            "ingrediente": "Alface",
+            "peso": "150"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Cenoura",
+            "peso": "30"
+          },
+          {
+            "ingrediente": "Brócolis",
+            "peso": "30"
+          },
+          {
+            "ingrediente": "Molho Vinagrete",
+            "peso": "20"
+          }
+        ]
+      },
+      "Cabola": {
+        "ingredientes": [
+          {
+            "ingrediente": "Alface",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "50"
+          },
+          {
+            "ingrediente": "Cebola",
+            "peso": "30"
+          },
+          {
+            "ingrediente": "Molho Vinagrete",
+            "peso": "20"
+          }
+        ]
+      },
+      "Tomate": {
+        "ingredientes": [
+          {
+            "ingrediente": "Alface",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Tomate",
+            "peso": "100"
+          },
+          {
+            "ingrediente": "Cenoura",
+            "peso": "30"
+          },
+          {
+            "ingrediente": "Molho Vinagrete",
+            "peso": "20"
+          }
+        ]
+      },
+      "Coca-Cola": {
+        "ingredientes": [
+          { 
+            "ingrediente": "Água gaseificada", 
+            "peso": "300" 
+          },
+          { 
+            "ingrediente": "Açúcar", 
+            "peso": "30" 
+          },
+          { 
+            "ingrediente": "Corante caramelo", 
+            "peso": "2" 
+          },
+          { 
+            "ingrediente": "Ácido fosfórico", 
+            "peso": "1" 
+          },
+          { 
+            "ingrediente": "Aromas naturais", 
+            "peso": "1" 
+          },
+          { 
+            "ingrediente": "Cafeína", 
+            "peso": "0.5" 
+          }
+        ]
+      },
+      "Sprite": {
+        "ingredientes": [
+          { 
+            "ingrediente": "Água gaseificada", 
+            "peso": "300" 
+          },
+          { 
+            "ingrediente": "Açúcar", 
+            "peso": "30" 
+          },
+          { 
+            "ingrediente": "Ácido cítrico", 
+            "peso": "1" 
+          },
+          { 
+            "ingrediente": "Aromas naturais de limão e lima", 
+            "peso": "1" 
+          },
+          { 
+            "ingrediente": "Benzoato de sódio", 
+            "peso": "0.5" 
+          }
+        ]
+      },
+      "Guaraná": {
+        "ingredientes": [
+          { 
+            "ingrediente": "Água gaseificada", 
+            "peso": "300" 
+          },
+          { 
+            "ingrediente": "Açúcar", 
+            "peso": "30" 
+          },
+          { 
+            "ingrediente": "Extrato de guaraná", 
+            "peso": "2" 
+          },
+          { 
+            "ingrediente": "Aromas naturais", 
+            "peso": "1" 
+          },
+          { 
+            "ingrediente": "Ácido cítrico", 
+            "peso": "1" 
+          },
+          { 
+            "ingrediente": "Benzoato de sódio", 
+            "peso": "0.5" 
+          }
+        ]
+      }
+    }
+}
+  

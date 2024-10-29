@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pizzaria AGERI - Home</title>
+  <link rel="stylesheet" href="./menu.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+  
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./script.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <a href="./index.html"><img src="./img/Logo-Pizzaria.png" alt="Logo Pizzaria AGERI"><span class="pizzaria">Pizzaria</span><span class="ageri">AGERI</span></a>
+      </div>
+      <nav>
+        <ul class="menu-list">
+          <li><a href="./index.html" class="menu-link" id="home-link">Home</a></li>
+          <li><a href="./menu.html#menuID" class="menu-link active">Cardápio</a></li>
+          <li><a href="./index.html#sobreID" class="menu-link" id="sobre-link">Sobre</a></li>
+          <li><a href="./carrinho.html" class="menu-link">Carrinho</a></li>
+          <ul class="social-media-head">
+            <li><a href="https://www.youtube.com/@AGERIConsultoriaemTecnologia" target="_blank"><img src="./img/icon-youtube.png" alt="YouTube"></a></li>
+            <li><a href="https://www.instagram.com/agericonsultoria/" target="_blank"><img src="./img/icon-instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/company/ageri-consultoria-tecnologia" target="_blank"><img src="./img/icon-linkedin.png" alt="LinkedIn"></a></li>
+          </ul>
+        </ul>
+
+      </nav>
+
+      <!-- Ícone do menu responsivo -->
+      <div id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu responsivo para dispositivos móveis -->
+  <nav id="responsive-menu">
+      <ul class="menu-list">
+        <li><a href="#homeID" class="menu-link">Home</a></li>
+        <li><a href="./menu.html#menuID" class="menu-link active">Cardápio</a></li>
+        <li><a href="./index.html#sobreID" class="menu-link">Sobre</a></li>
+        <li><a href="./carrinho.html" class="menu-link">Carrinho</a></li>
+        <ul class="social-media-head">
+          <li><a href="https://www.youtube.com/@AGERIConsultoriaemTecnologia" target="_blank"><img src="./img/icon-youtube.png" alt="YouTube"></a></li>
+          <li><a href="https://www.instagram.com/agericonsultoria/" target="_blank"><img src="./img/icon-instagram.png" alt="Instagram"></a></li>
+          <li><a href="https://www.linkedin.com/company/ageri-consultoria-tecnologia" target="_blank"><img src="./img/icon-linkedin.png" alt="LinkedIn"></a></li>
+        </ul>
+      </ul>
+  </nav>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <p>Este site tem por objetivo a simulação de compras, nenhum pedido tem validade real. As informações aqui inseridas são de cunho educacional!</p>
+    </div>
+  </div>
+
+
+  <section class="container menu" id="menuID">
+    <div class="menu-text">
+      <h1>CARDÁPIO</h1>
+    </div>
+    <div class="menu-wrapper">
+      <div class="tabs">
+        <button class="tab active" data-category="pizza" onclick="openCategory('pizza')">Pizza</button>
+        <button class="tab" data-category="salada" onclick="openCategory('salada')">Salada</button>
+        <button class="tab" data-category="bebidas" onclick="openCategory('bebidas')">Bebidas</button>
+      </div>
+      <div id="pizza" class="category produtos active">
+        <div  class="menu-carousel">
+          <div class="menu-item" id="pizza1">
+            <div class="produto">
+              <img src="./img/10.png" alt="Produto 1">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Nachos</h2>
+                  <p class="price">R$ 46,00</p>
+                </div>
+                <p class="descricao">Nacho</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/11.png" alt="Produto 2">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Calabresa</h2>
+                  <p class="price">R$ 59,00</p>
+                </div>
+                <p class="descricao">Calabresa</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/12.png" alt="Produto 3">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Portuguesa</h2>
+                  <p class="price">R$ 36,00</p>
+                </div>
+                <p class="descricao">Portuguesa</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/13.png" alt="Produto 4">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Morango</h2>
+                  <p class="price">R$ 30,00</p>
+                </div>
+                <p class="descricao">Morango</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/9.png" alt="Produto 5">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Carne 1</h2>
+                  <p class="price">R$ 38,00</p>
+                </div>
+                <p class="descricao">Carne com queijo</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/8.png" alt="Produto 1">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Frango 1</h2>
+                  <p class="price">R$ 40,00</p>
+                </div>
+                <p class="descricao">Frango com queijo e carne</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/7.png" alt="Produto 1">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Frango 2</h2>
+                  <p class="price">R$ 47,00</p>
+                </div>
+                <p class="descricao">Frango desfiado com catupiry</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/6.png" alt="Produto 1">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Linguiça</h2>
+                  <p class="price">R$ 43,00</p>
+                </div>
+                <p class="descricao">Linguiça fatiada com queijo</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/5.png" alt="Produto 1">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Frango 3</h2>
+                  <p class="price">R$ 46,00</p>
+                </div>
+                <p class="descricao">Frango com queijo</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/4.png" alt="Produto 1">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Cogumelo</h2>
+                  <p class="price">R$ 57,00</p>
+                </div>
+                <p class="descricao">Cogumelo com queijo</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/3.png" alt="Produto 1">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Carne 2</h2>
+                  <p class="price">R$ 49,00</p>
+                </div>
+                <p class="descricao">Carne com queijo</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+            <div class="produto">
+              <img src="./img/2.png" alt="Produto 1">
+              <div class="info">
+                <div class="nome-preco">
+                  <h2>Calabresa 2</h2>
+                  <p class="price">R$ 58,00</p>
+                </div>
+                <p class="descricao">Calabresa especial</p>
+                <div class="botoes">
+                  <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                  <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="salada" class="category" style="display: none;">
+        <div class="menu-item" id="salada1">
+          <div class="produto">
+            <img src="./img/Salada_07.png" alt="Produto 4">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Alface</h2>
+                <p class="price">R$ 10,00</p>
+              </div>
+              <p class="descricao">Salada de Alface</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/Salada_06.png" alt="Produto 5">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Anate</h2>
+                <p class="price">R$ 5,00</p>
+              </div>
+              <p class="descricao">Salada Anate</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/Salada_05.png" alt="Produto 6">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Mista</h2>
+                <p class="price">R$ 12,00</p>
+              </div>
+              <p class="descricao">Salada Mista</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/Salada_04.png" alt="Produto 4">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Verfruta</h2>
+                <p class="price">R$ 9,00</p>
+              </div>
+              <p class="descricao">Salada de Fruta e Verdura</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/Salada_03.png" alt="Produto 4">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Verdura</h2>
+                <p class="price">R$ 10,00</p>
+              </div>
+              <p class="descricao">Salada de Verduras</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/Salada_02.png" alt="Produto 4">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Cebola</h2>
+                <p class="price">R$ 7,00</p>
+              </div>
+              <p class="descricao">Salada de Cebola e Cebolinha</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/Salada_01.png" alt="Produto 4">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Tomate</h2>
+                <p class="price">R$ 11,00</p>
+              </div>
+              <p class="descricao">Salada de Tomate</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bebidas" class="category" style="display: none;">
+        <div class="menu-item" id="refrigerante1">
+          <div class="produto">
+            <img src="./img/refrigerante_04.png" alt="Produto 4">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Coca-Cola</h2>
+                <p class="price">R$ 7,00</p>
+              </div>
+              <p class="descricao">Refrigerante Coca-Cola</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/refrigerante_03.png" alt="Produto 5">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Sprite</h2>
+                <p class="price">R$ 6,00</p>
+              </div>
+              <p class="descricao">Refrigerante Sprite</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+          <div class="produto">
+            <img src="./img/refrigerante_02.png" alt="Produto 6">
+            <div class="info">
+              <div class="nome-preco">
+                <h2>Guaraná</h2>
+                <p class="price">R$ 4,00</p>
+              </div>
+              <p class="descricao">Refrigerante Guaraná</p>
+              <div class="botoes">
+                <a href="carrinho.html"><button class="comprar" onclick="adicionarCarrinho(event)">Comprar</button></a>
+                <button class="adicionar" onclick="adicionarCarrinho(event)"><img src="img/cart.png" alt="Carrinho"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="container-footer">
+        <div class="logo">
+          <a href=""><span class="pizzaria">Pizzaria</span><span class="ageri">AGERI</span></a>
+        </div>
+        <ul class="social-media">
+          <li><a href="https://www.youtube.com/@AGERIConsultoriaemTecnologia" target="_blank"><img src="./img/icon-youtube.png" alt="YouTube"></a></li>
+          <li><a href="https://www.instagram.com/agericonsultoria/" target="_blank"><img src="./img/icon-instagram.png" alt="Instagram"></a></li>
+          <li><a href="https://www.linkedin.com/company/ageri-consultoria-tecnologia" target="_blank"><img src="./img/icon-linkedin.png" alt="LinkedIn"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; <span id="current-year">2024</span> Pizzaria AGERI. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Função para mostrar o pop-up
+    function showPopup() {
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    // Função para fechar o pop-up e salvar o estado no localStorage
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        localStorage.setItem('popupClosed', Date.now());
+    }
+
+    // Adiciona evento de clique ao botão de fechar
+    document.querySelector(".close-btn").addEventListener("click", closePopup);
+
+    // Fecha o pop-up ao clicar fora do conteúdo do pop-up
+    window.onclick = function(event) {
+        if (event.target === document.getElementById("popup")) {
+            closePopup();
+        }
+    }
+
+    // Mostra o pop-up quando a página é carregada, se ele não tiver sido fechado recentemente
+    window.onload = function() {
+        const popupClosed = localStorage.getItem('popupClosed');
+        const tenMinutes = 10 * 60 * 1000;
+
+        if (!popupClosed || (Date.now() - popupClosed > tenMinutes)) {
+            showPopup();
+        }
+    };
+
+    function adicionarCarrinho(event) {
+        // Captura o elemento pai do botão clicado
+        const produto = event.target.closest('.produto');
+
+        // Obtém os dados do produto
+        const nome = produto.querySelector('.nome-preco h2').textContent;
+        const precoTexto = produto.querySelector('.nome-preco .price').textContent;
+        const preco = parseFloat(precoTexto.replace('R$ ', '').replace(',', '.'));
+        const descricao = produto.querySelector('.descricao').textContent;
+        const imagem = produto.querySelector('img').src; // Supondo que a imagem esteja presente na estrutura HTML
+
+        // Exibe os dados capturados para teste
+        console.log("Nome:", nome);
+        console.log("Preço:", preco);
+        console.log("Descrição:", descricao);
+        console.log("Imagem:", imagem);
+
+        // Aqui você pode chamar a função para enviar os dados para o servidor
+        carrinho(nome, preco, descricao, imagem);
+    }
+
+    function carrinho(nome, preco, descricao, imagem) {
+      // Aqui você pode fazer a requisição AJAX para enviar os dados para o servidor
+      // Exemplo utilizando fetch para uma API REST
+      fetch('/carrinho', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ nome, preco, descricao, imagem }),
+      })
+      .then(response => response.json())
+      .then(data => {
+          console.log('Resposta do servidor:', data);
+          // Aqui você pode redirecionar para a página do carrinho ou exibir uma mensagem de sucesso
+      })
+      .catch(error => {
+          console.error('Erro ao adicionar ao carrinho:', error);
+          // Aqui você pode exibir uma mensagem de erro para o usuário
+      });
+    }
+
+    document.getElementById('menos').addEventListener('click', function() {
+      const quantidadeInput = document.getElementById('quantidade');
+      let quantidade = parseInt(quantidadeInput.value);
+      if (quantidade > 1) {
+          quantidade--;
+          quantidadeInput.value = quantidade;
+      }
+    });
+    document.getElementById('mais').addEventListener('click', function() {
+      const quantidadeInput = document.getElementById('quantidade');
+      let quantidade = parseInt(quantidadeInput.value);
+      quantidade++;
+      quantidadeInput.value = quantidade;
+    });
+
+    const textos = [
+      {
+        titulo: "Nachos",
+        textoAdicional: "Experimente a explosão de sabores mexicanos em cada mordida! Nossa pizza de nachos é uma festa para seus sentidos, com uma base crocante coberta com uma generosa camada de queijo derretido, nachos crocantes, pimentões coloridos, cebolas frescas e uma pitada picante de jalapeños. Uma verdadeira fiesta em sua boca!"
+      },
+      {
+        titulo: "Calabresa",
+        textoAdicional: "Sinta o sabor autêntico da Itália em cada pedaço! Nossa pizza de calabresa é uma obra-prima de simplicidade e sabor. Delicie-se com nossa massa fina e crocante, generosamente coberta com fatias suculentas de calabresa defumada, queijo derretido e temperos italianos. Uma verdadeira delícia clássica!"
+      },
+      {
+        titulo: "Strogonoff",
+        textoAdicional: "Prepare-se para uma experiência gourmet única e irresistível! Nossa pizza de strogonoff é uma combinação perfeita entre a tradição russa e o sabor italiano. Delicie-se com uma base macia e saborosa, coberta com nosso delicioso strogonoff de carne cremoso, queijo derretido e ervas frescas. Uma explosão de sabores!"
+      }
+    ];
+
+    let currentIndex = 0;
+
+    function moverImagem() {
+      const primeiraImagem = document.querySelector('.image-container img:first-child');
+      const ultimaImagem = document.querySelector('.image-container img:last-child');
+      
+      const primeiraBullet = document.querySelector('.bullet:first-child');
+      const ultimaBullet = document.querySelector('.bullet:last-child');
+
+      primeiraImagem.parentNode.removeChild(primeiraImagem);
+      ultimaImagem.parentNode.insertBefore(primeiraImagem, ultimaImagem.nextSibling);
+
+      primeiraBullet.parentNode.removeChild(primeiraBullet);
+      ultimaBullet.parentNode.insertBefore(primeiraBullet, ultimaBullet.nextSibling);
+
+      updateText();
+    }
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % textos.length;
+      moverImagem();
+      updateBullet(); // Adicione esta linha para atualizar as bolinhas
+    }
+
+    function previousImage() {
+      currentIndex = (currentIndex - 1 + textos.length) % textos.length;
+      moverImagem();
+    }
+
+    function updateText() {
+      document.querySelector('.word1').textContent = textos[currentIndex].titulo;
+      document.querySelector('.word2').textContent = textos[currentIndex].titulo;
+      document.querySelector('.texto-adicional').textContent = textos[currentIndex].textoAdicional;
+    }
+
+    function updateBullet() {
+      const bullets = document.querySelectorAll('.bullet');
+      bullets.forEach((bullet, index) => {
+        if (index === currentIndex) {
+          bullet.classList.add('active');
+        } else {
+          bullet.classList.remove('active');
+        }
+      });
+    }
+
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+    leftArrow.addEventListener('click', previousImage);
+    rightArrow.addEventListener('click', nextImage);
+
+    setInterval(nextImage, 6000);
+
+    document.addEventListener("DOMContentLoaded", function() {
+      const prevBtn = document.querySelector(".prev-btn");
+      const nextBtn = document.querySelector(".next-btn");
+      const carouselContent = document.querySelector(".carousel-content");
+      const feedbackItems = document.querySelectorAll(".feedback-item");
+
+      nextBtn.addEventListener("click", function() {
+        if (currentIndex < feedbackItems.length - 1) {
+          currentIndex++;
+          updateCarousel();
+        }
+      });
+
+      prevBtn.addEventListener("click", function() {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+        }
+      });
+
+      function updateCarousel() {
+        const itemWidth = feedbackItems[currentIndex].offsetWidth;
+        const newPosition = -itemWidth * currentIndex;
+        carouselContent.style.transform = `translateX(${newPosition}px)`;
+      }
+    });
+
+    // Slide FeedBack
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("feedback-slide");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slides[slideIndex-1].style.display = "block";  
+    }
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    document.querySelector('.prev-btn').addEventListener('click', function() {
+      plusSlides(-1);
+    });
+
+    document.querySelector('.next-btn').addEventListener('click', function() {
+      plusSlides(1);
+    });
+    setInterval(function() {
+      plusSlides(1);
+    }, 7000);
+
+    var touchstartX = 0;
+    var touchendX = 0;
+
+    var carousel = document.querySelector('.feedback-carousel');
+
+    carousel.addEventListener('touchstart', function(event) {
+      touchstartX = event.changedTouches[0].screenX;
+    });
+
+    carousel.addEventListener('touchend', function(event) {
+      touchendX = event.changedTouches[0].screenX;
+      handleGesture();
+    });
+
+    function handleGesture() {
+      if (touchendX < touchstartX) {
+        plusSlides(1);
+      }
+      
+      if (touchendX > touchstartX) {
+        plusSlides(-1);
+      }
+    }
+    
+    // Atualiza o ano atual
+    var currentYearElement = document.getElementById('current-year');
+    var currentYear = new Date().getFullYear();
+    currentYearElement.textContent = currentYear;
+    
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript">
+        if (window.location.pathname === '/carrinho.html') {
+          window.history.replaceState(null, '', '/carrinho');
+        }
+    </script>
+    
+  <title>Pizzaria AGERI - Home</title>
+  <link rel="stylesheet" href="./carrinho.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html"><img src="./img/Logo-Pizzaria.png" alt="Logo Pizzaria AGERI"><span class="pizzaria">Pizzaria</span><span class="ageri">AGERI</span></a>
+            </div>
+          <nav>
+            <ul class="menu-list">
+              <li><a href="./index.html" class="menu-link" id="home-link">Home</a></li>
+              <li><a href="./menu.html#menuID" class="menu-link">Cardápio</a></li>
+              <li><a href="./index.html#sobreID" class="menu-link" id="sobre-link">Sobre</a></li>
+              <li><a href="./carrinho.html" class="menu-link active">Carrinho</a></li>
+              <ul class="social-media-head">
+                <li><a href="https://www.youtube.com/@AGERIConsultoriaemTecnologia" target="_blank"><img src="./img/icon-youtube.png" alt="YouTube"></a></li>
+                <li><a href="https://www.instagram.com/agericonsultoria/" target="_blank"><img src="./img/icon-instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.linkedin.com/company/ageri-consultoria-tecnologia" target="_blank"><img src="./img/icon-linkedin.png" alt="LinkedIn"></a></li>
+              </ul>
+            </ul>
+    
+          </nav>
+    
+          <!-- Ícone do menu responsivo -->
+          <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </header>
+    
+      <!-- Menu responsivo para dispositivos móveis -->
+      <nav id="responsive-menu">
+          <ul class="menu-list">
+            <li><a href="#homeID" class="menu-link">Home</a></li>
+            <li><a href="./menu.html#menuID" class="menu-link">Cardápio</a></li>
+            <li><a href="./index.html#sobreID" class="menu-link">Sobre</a></li>
+            <li><a href="./carrinho.html" class="menu-link active">Carrinho</a></li>
+            <ul class="social-media-head">
+              <li><a href="https://www.youtube.com/@AGERIConsultoriaemTecnologia" target="_blank"><img src="./img/icon-youtube.png" alt="YouTube"></a></li>
+              <li><a href="https://www.instagram.com/agericonsultoria/" target="_blank"><img src="./img/icon-instagram.png" alt="Instagram"></a></li>
+              <li><a href="https://www.linkedin.com/company/ageri-consultoria-tecnologia" target="_blank"><img src="./img/icon-linkedin.png" alt="LinkedIn"></a></li>
+            </ul>
+          </ul>
+      </nav>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <p>Este site tem por objetivo a simulação de compras, nenhum pedido tem validade real. As informações aqui inseridas são de cunho educacional!</p>
+    </div>
+  </div>
+
+  <section class="parallax-container">
+    <div class="container container-pizza">
+      <div class="container-word">
+        <h1 class="word2">Meu Carrinho</h1>
+        <p class="texto-adicional">Preparamos cada pizza com carinho e ingredientes fresquinhos só para você. Confira suas delícias antes de finalizar o pedido e se precisar adicionar mais alguma coisa, estamos sempre prontos para satisfazer a sua fome!
+
+        <br><br>Não esqueça: quanto mais pizza, melhor!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="carrinho">
+        <div class="cart-left" id="itemsContainer">
+        </div>
+        <div id="empty-cart-message" style="display: none;">
+          <p>Você não tem itens no carrinho.</p>
+        </div>
+        <div class="cart-right">
+            <div class="order-summary">
+                <h2>Resumo do Pedido</h2>
+                <div class="summary-details">
+                    <div class="row">
+                        <p>Subtotal <span class="subtotal-ident">(<span id="total-items"></span> Produtos)</span></p>
+                        <p><span id="total-price-top"></span></p>
+                    </div>
+                    <input type="text" id="coupon-code" placeholder="Insira o código do cupom">
+                    <p id="discount-message" class="discount-message"></p>
+                </div>
+                <hr>
+                <div class="identification">
+                    <h2>Identificação</h2>
+                    <input type="text" id="customer-name" required placeholder="Insira seu nome">
+                    <input type="text" id="customer-city" required placeholder="Insira seu estado" list="city-list">
+                    <datalist id="city-list"></datalist>
+                </div>
+                <hr>
+                <div class="payment-method">
+                    <h2>Método de Pagamento</h2>
+                    <label for="forma-pagamento">Forma de Pagamento:</label>
+                    <select id="forma-pagamento" name="forma-pagamento">
+                        <option value="Selecione">Selecione</option>
+                        <option value="Pix">Pix</option>
+                        <option value="Cartão de Crédito">Cartão de Crédito</option>
+                        <option value="Cartão de Débito">Cartão de Débito</option>
+                    </select>
+                    <p>Total: <span id="total-price-bottom"></span></p>
+                </div>
+
+                <h2 class="texto-informativo">Lembrando que nenhum pedido tem validade real. As informações aqui inseridas são de cunho educacional!</h2>
+
+                <button class="checkout-btn">Comprar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <footer>
+    <div class="container">
+      <div class="container-footer">
+        <div class="logo">
+          <a href=""><span class="pizzaria">Pizzaria</span><span class="ageri">AGERI</span></a>
+        </div>
+        <ul class="social-media">
+          <li><a href="https://www.youtube.com/@AGERIConsultoriaemTecnologia" target="_blank"><img src="./img/icon-youtube.png" alt="YouTube"></a></li>
+          <li><a href="https://www.instagram.com/agericonsultoria/" target="_blank"><img src="./img/icon-instagram.png" alt="Instagram"></a></li>
+          <li><a href="https://www.linkedin.com/company/ageri-consultoria-tecnologia" target="_blank"><img src="./img/icon-linkedin.png" alt="LinkedIn"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; <span id="current-year"></span> Pizzaria AGERI. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Função para mostrar o pop-up
+    function showPopup() {
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    // Função para fechar o pop-up e salvar o estado no localStorage
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        localStorage.setItem('popupClosed', Date.now());
+    }
+
+    // Adiciona evento de clique ao botão de fechar
+    document.querySelector(".close-btn").addEventListener("click", closePopup);
+
+    // Fecha o pop-up ao clicar fora do conteúdo do pop-up
+    window.onclick = function(event) {
+        if (event.target === document.getElementById("popup")) {
+            closePopup();
+        }
+    }
+
+    // Mostra o pop-up quando a página é carregada, se ele não tiver sido fechado recentemente
+    window.onload = function() {
+        const popupClosed = localStorage.getItem('popupClosed');
+        const tenMinutes = 10 * 60 * 1000;
+
+        if (!popupClosed || (Date.now() - popupClosed > tenMinutes)) {
+            showPopup();
+        }
+    };
+
+    async function fetchItems() {
+        try {
+            const response = await fetch('/api/carrinho');
+            if (!response.ok) {
+                throw new Error('Erro ao buscar os itens do carrinho');
+            }
+            const items = await response.json();
+            console.log(items);
+
+            const itemsContainer = document.getElementById('itemsContainer');
+
+            function updateOrderSummary(discountApplied = false) {
+                let totalItems = 0;
+                let totalPrice = 0;
+
+                items.forEach(item => {
+                    const itemDiv = document.getElementById(`item-${item.id}`);
+                    const quantidadeInput = itemDiv.querySelector('.quantidade');
+                    const quantidade = parseInt(quantidadeInput.value);
+                    const precoUnitario = parseFloat(item.preco);
+
+                    totalItems += quantidade;
+                    totalPrice += quantidade * precoUnitario;
+                });
+
+                if (discountApplied) {
+                    const discountAmount = totalPrice * 0.07;
+                    const totalPriceWithDiscount = totalPrice - discountAmount;
+
+                    document.getElementById('discount-message').textContent = `Desconto de 7% aplicado (${discountAmount.toFixed(2)})`;
+                    document.getElementById('total-price-bottom').textContent = `R$ ${totalPriceWithDiscount.toFixed(2)}`;
+                } else {
+                    document.getElementById('discount-message').textContent = '';
+                    document.getElementById('total-price-bottom').textContent = `R$ ${totalPrice.toFixed(2)}`;
+                }
+
+                document.getElementById('total-items').textContent = totalItems;
+                document.getElementById('total-price-top').textContent = `R$ ${totalPrice.toFixed(2)}`;
+                
+                if (items.length === 0) {
+                    document.getElementById('itemsContainer').innerHTML = '<p class="empty-cart-message">Seu carrinho está vazio.</p>';
+                }
+            }
+
+            items.forEach(item => {
+                const divItem = document.createElement('div');
+                divItem.classList.add('item');
+
+                divItem.innerHTML = `
+                    <input type="checkbox" class="item-selector">
+                    <img src="${item.imagem}" alt="Produto">
+                    <div class="item-details" id="item-${item.id}">
+                        <div class="item-pizza">
+                            <h3>${item.nome}</h3>
+                            <button class="delete-btn" data-id="${item.id}">X</button>
+                        </div>
+                        <p>${item.descricao}</p>
+                        <div class="item-info">
+                            <div class="size">
+                                <label for="size">Tamanho:</label>
+                                <select id="size">
+                                    <option value="P">P</option>
+                                </select>
+                            </div>
+                            <div class="quantity">
+                                <div>
+                                    <button class="quantidade-btn-carrin" id="menos">-</button>
+                                    <input type="number" class="quantidade" value="1">
+                                    <button class="quantidade-btn-carrin" id="mais">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price-info">
+                            <p>Preço Unitário: <span>R$ ${item.preco.toFixed(2)}</span></p>
+                            <p class="totalGeral">Total: <span>R$ ${(item.preco * 1).toFixed(2)}</span></p>
+                        </div>
+                    </div>
+                `;
+
+                itemsContainer.appendChild(divItem);
+            });
+
+            const custoProducao = {
+                "Nachos": 12.81,
+                "Calabresa": 10.14,
+                "Portuguesa": 8.71,
+                "Morango": 9.43,
+                "Carne 1": 8.00,
+                "Carne 2": 11.00,
+                "Frango 1": 9.57,
+                "Frango 2": 13.57,
+                "Linguiça": 10.71,
+                "Frango 3": 12.86,
+                "Cogumelo": 13.71,
+                "Calabresa 2": 8.43,
+                "Alface": 3.14,
+                "Anate": 1.57,
+                "Mista": 2.57,
+                "Verfruta": 2.43,
+                "Verdura": 2.14,
+                "Cabola": 1.00,
+                "Tomate": 1.86,
+                "Coca-Cola": 1.50,
+                "Sprite": 1.29,
+                "Guaraná": 0.86,
+                "Strogonoff": 7.26
+            };
+
+            updateOrderSummary();
+
+            document.querySelectorAll('.quantidade-btn-carrin').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    const quantidadeInput = button.parentNode.querySelector('input[type="number"]');
+                    let quantidade = parseInt(quantidadeInput.value);
+                    if (button.id === 'menos') {
+                        if (quantidade > 1) {
+                            quantidade--;
+                        }
+                    } else if (button.id === 'mais') {
+                        quantidade++;
+                    }
+                    quantidadeInput.value = quantidade;
+
+                    const itemDiv = button.closest('.item-details');
+                    const precoUnitario = parseFloat(itemDiv.querySelector('.price-info span').textContent.replace('R$ ', '').replace(',', '.'));
+                    const total = precoUnitario * quantidade;
+
+                    itemDiv.querySelector('.totalGeral span').textContent = `R$ ${total.toFixed(2)}`;
+                    updateOrderSummary();
+                });
+            });
+
+            document.querySelectorAll('.delete-btn').forEach(button => {
+                button.addEventListener('click', function(event) {
+                    const itemDiv = button.closest('.item-details');
+                    const itemId = button.getAttribute('data-id');
+
+                    fetch(`/api/carrinho/${itemId}`, {
+                        method: 'DELETE',
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Erro ao excluir item do carrinho');
+                        }
+                        itemDiv.remove();
+                        const itemContainer = itemDiv.closest('.item');
+                        if (itemContainer) {
+                            itemContainer.remove();
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erro ao excluir item do carrinho:', error);
+                    });
+                    updateOrderSummary();
+                    window.location.reload();
+                });
+            });
+
+            const couponCodeInput = document.getElementById('coupon-code');
+            couponCodeInput.addEventListener('input', function() {
+                const couponCode = couponCodeInput.value.trim().toUpperCase();
+                const discountApplied = couponCode === 'AGERI';
+
+                updateOrderSummary(discountApplied);
+
+                if (discountApplied) {
+                    document.getElementById('discount-message').textContent = 'Desconto de 7% aplicado';
+                } else {
+                    document.getElementById('discount-message').textContent = '';
+                }
+            });
+
+            const checkoutButton = document.querySelector('.checkout-btn');
+            checkoutButton.addEventListener('click', async function() {
+                const customerName = document.getElementById('customer-name').value.trim();
+                const customerCity = document.getElementById('customer-city').value.trim();
+                const paymentMethod = document.getElementById('forma-pagamento').value;
+
+                if (!customerName || !customerCity || paymentMethod === 'Selecione') {
+                    alert('Por favor, preencha todos os campos obrigatórios.');
+                    return;
+                }
+
+                const orderId = generateUniqueId();  // Gerar um ID único para o pedido
+
+                const comprasData = [];
+
+                items.forEach(item => {
+                    const itemDiv = document.getElementById(`item-${item.id}`);
+                    const quantidadeInput = itemDiv.querySelector('.quantidade');
+                    const quantidade = parseInt(quantidadeInput.value);
+                    const precoUnitario = parseFloat(item.preco);
+                    const total = quantidade * precoUnitario;
+
+                    const custoItem = custoProducao[item.nome] || 0; // Define custo como 0 se não encontrado
+
+                    const compraData = {
+                        idUser: orderId,  // Inclui o ID do pedido
+                        nome: customerName,
+                        estado: customerCity,
+                        sabor: item.nome,
+                        quantidade: quantidade,
+                        total: total.toFixed(2),
+                        metodoPagamento: paymentMethod,
+                        cupon: document.getElementById('discount-message').textContent.trim() ? 'True' : 'False',
+                        precoFinal: parseFloat(document.getElementById('total-price-bottom').textContent.trim().replace('R$ ', '')),
+                        custoProducao: custoItem
+                    };
+
+                    comprasData.push(compraData);
+                });
+
+                try {
+                    const promises = comprasData.map(compraData => {
+                        return fetch('/api/compra', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(compraData)
+                        });
+                    });
+
+                    const responses = await Promise.all(promises);
+
+                    responses.forEach(response => {
+                        if (!response.ok) {
+                            throw new Error('Erro ao salvar uma das compras');
+                        }
+                    });
+
+                    await fetch('/api/carrinho', {
+                        method: 'DELETE',
+                    });
+
+                    itemsContainer.innerHTML = '';
+                    document.getElementById('total-items').textContent = '0';
+                    document.getElementById('total-price-top').textContent = 'R$ 0.00';
+                    document.getElementById('total-price-bottom').textContent = 'R$ 0.00';
+                    document.getElementById('discount-message').textContent = '';
+
+                    alert('Compra realizada com sucesso!');
+                } catch (error) {
+                    console.error('Erro ao processar a compra:', error);
+                    alert('Erro ao processar a compra. Por favor, tente novamente mais tarde.');
+                }
+            });
+
+        } catch (error) {
+            console.error('Erro ao buscar os itens do carrinho:', error);
+        }
+    }
+
+    // Função para gerar um ID único
+    function generateUniqueId() {
+        return 'id-' + Date.now() + '-' + Math.floor(Math.random() * 1000);
+    }
+
+    // Coletar os estados do Brasil
+    document.addEventListener('DOMContentLoaded', async function() {
+        const cityInput = document.getElementById('customer-city');
+        const cityList = document.getElementById('city-list');
+
+        let cities = [];
+
+        try {
+            const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados/');
+            const data = await response.json();
+            cities = data.map(city => city.nome);
+        } catch (error) {
+            console.error('Erro ao carregar as cidades:', error);
+        }
+
+        cityInput.addEventListener('input', function() {
+            const input = cityInput.value.toLowerCase();
+            cityList.innerHTML = '';
+
+            const filteredCities = cities.filter(city => city.toLowerCase().startsWith(input));
+
+            filteredCities.forEach(city => {
+                const option = document.createElement('option');
+                option.value = city;
+                cityList.appendChild(option);
+            });
+        });
+    });
+
+    window.addEventListener('load', fetchItems);
+
+    // Adiciona o Ano automaticamente.
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+
+    
+</body>
+</html>
